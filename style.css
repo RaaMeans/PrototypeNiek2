@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: relative; 
+}
+
+
+.nike-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px; 
+    height: auto;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+
+.product {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image-container img {
+    position: absolute;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    width: 80%;
+    height: auto;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.color-selection {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.color-btn {
+    padding: 0.5rem 1rem; 
+    border-radius: 12px; 
+    border: none;
+    cursor: pointer;
+    color: black; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.color-btn:hover {
+    opacity: 0.8;
+}
+
+
+#cart {
+    margin-top: 2rem;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

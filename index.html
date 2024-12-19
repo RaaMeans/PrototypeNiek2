@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - PROTOTYPE</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2015/12/nike-logo-wallpapers-white-black.jpg" alt="Nike Logo" class="nike-logo">
+        <h1>Welcome to PROTOTYPE Shop</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Your One-Stop Shop for Nike Footwear</h2>
+            <p>Explore our latest collection of high-performance and stylish sneakers. Whether you're an athlete or a fashion enthusiast, we have something for you!</p>
+        </section>
+        <section class="login-section">
+            <h2>Login</h2>
+            <form id="login-form" class="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.body.style.opacity = 0;
+            document.body.style.transition = 'opacity 0.5s ease-in-out';
+            setTimeout(() => (document.body.style.opacity = 1), 50);
+    
+            // Mock login functionality
+            const loginForm = document.getElementById('login-form');
+            loginForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                alert('Login successful!');
+                window.location.href = 'shop.html';
+            });
+        });
+    </script>    
+    </body>
+    </html>

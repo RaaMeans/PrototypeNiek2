@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - PROTOTYPE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2015/12/nike-logo-wallpapers-white-black.jpg" alt="Nike Logo" class="nike-logo">
+        <h1>PROTOTYPE - Shop</h1>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Available Products</h2>
+            <div class="product" data-name="Nike Kyrie 5" data-price="6999.99">
+                <h3>Nike Kyrie 5</h3>
+                <div class="product-image-container" id="product-image">
+                    <img src="https://www.highsnobiety.com/static-assets/thumbor/363lI-uQ0AvjgFyi1fABqSFzVGk=/1600x1067/www.highsnobiety.com/static-assets/wp-content/uploads/2019/08/08161058/spongebob-squarepants-nike-buy-online-01.jpg" id="product-img" alt="Nike Kyrie 5">
+                </div>
+                <p>Price: ₱6999.99</p>
+                <div class="color-selection">
+                    <span>Color:</span>
+                    <button class="color-btn" data-color="pink" data-img="https://www.highsnobiety.com/static-assets/thumbor/363lI-uQ0AvjgFyi1fABqSFzVGk=/1600x1067/www.highsnobiety.com/static-assets/wp-content/uploads/2019/08/08161058/spongebob-squarepants-nike-buy-online-01.jpg" style="background-color: pink;">Patrick Star</button>
+                    <button class="color-btn" data-color="yellow" data-img="https://th.bing.com/th/id/OIP.ehhu1ncjuW7ZDeTXpTBjXQHaEc?pid=ImgDet&w=474&h=284&rs=1" style="background-color: yellow;">Spongebob Squarepants</button>
+                    <button class="color-btn" data-color="blue" data-img="https://th.bing.com/th/id/OIP.y5Ui1vGJsb8xy4AxePx_TQHaE8?pid=ImgDet&w=474&h=316&rs=1" style="background-color: turquoise;">Squidward</button>
+                    <button class="color-btn" data-color="red" data-img="https://th.bing.com/th/id/OIP.n8XUTWP_gbB4Q6NjgVtF5gHaE8?pid=ImgDet&w=474&h=316&rs=1" style="background-color: red;">Mr.Krabs</button>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price">Total: ₱0.00</p>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
